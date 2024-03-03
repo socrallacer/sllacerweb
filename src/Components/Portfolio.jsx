@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/final.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Ticket App (Developing)",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Creating a Next.js and Mongoose web app with Tailwind CSS for managing diverse IT incidents. By integrating Tailwind CSS for streamlined UI development alongside Next.js and Mongoose, our project ensures efficient incident tracking and resolution.",
+    url: "https://github.com/socrallacer/ticket-app",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Personal Web Development (This One))",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Building my personal website using tools from GitHub Global Campus and React. Leveraging GitHub Global Campus resources and React for an interactive and professional web presence.",
+    url: "https://github.com/socrallacer/sllweb",
   },
   {
-    title: "My Resume Site",
+    title: "Data Mining Project With Titanic Dataset (Kaggle)",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Conducting data mining on the Titanic dataset from Kaggle using RapidMiner. Employing RapidMiner's powerful analytics capabilities to extract insights and patterns from the Titanic dataset for predictive modeling.",
+    url: "https://github.com/socrallacer/titanic",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Network system tecnlogies course",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Compendium of notes and lab projects for the course 'Network Systems Technologies,' covering Node.js, Docker, and MongoDB. This collection explores modern network technologies, emphasizing practical applications in web development and containerized environments.",
+    url: "https://github.com/socrallacer/TSR",
   },
 ];
 
