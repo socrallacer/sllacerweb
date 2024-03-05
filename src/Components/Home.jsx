@@ -6,7 +6,6 @@
  */
 
 import React from "react";
-import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
 
 /**
@@ -20,12 +19,13 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/inicio.jpg";
 
-const imageAltText =
-  "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
+import image from "../images/inicio.jpg";
+import { useScroll } from "../Contexts/ScrollContext";
+import arrowSvg from "../images/down-arrow.svg";
 
 const Home = ({ name, title }) => {
+  const { scrollToAbout } = useScroll();
   return (
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
@@ -34,7 +34,12 @@ const Home = ({ name, title }) => {
         <h2>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+        <button
+          onClick={scrollToAbout}
+          style={{ cursor: "pointer", border: "none", background: "none" }}
+        >
+          <img src={arrowSvg} alt="Scroll Down" style={{ height: "3rem", width: "3rem" }} />
+        </button>
       </div>
     </section>
   );

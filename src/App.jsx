@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import { ScrollProvider } from "./Contexts/ScrollContext";
 
 import "./styles.css";
 
@@ -40,13 +41,15 @@ const secondaryColor = "#D2F1E4";
 
 const App = () => {
   return (
-    <div id="main">
-      <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
-      <About />
-      <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
-    </div>
+    <ScrollProvider>
+      <div id="main">
+        <Header />
+        <Home name={siteProps.name} title={siteProps.title} />
+        <About id="about" />
+        <Portfolio />
+        <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      </div>
+    </ScrollProvider>
   );
 };
 
