@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext } from "react";
 
 //New context to provide a function to scroll to the about section
 const ScrollContext = createContext();
@@ -10,18 +10,12 @@ export const useScroll = () => {
 
 //Provider to provide the scroll function to the components
 export const ScrollProvider = ({ children }) => {
-  
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-
-  return (
-    <ScrollContext.Provider value={{ scrollToAbout }}>
-      {children}
-    </ScrollContext.Provider>
-  );
+  return <ScrollContext.Provider value={{ scrollToAbout }}>{children}</ScrollContext.Provider>;
 };
