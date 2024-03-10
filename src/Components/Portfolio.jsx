@@ -68,19 +68,19 @@ const Portfolio = () => {
               height: "90%",
               width: "100%",
               objectFit: "cover",
-              animation: "slideInLeft 1s ease-in-out forwards",
+              animation: "slideInLeftAnimation 1s ease-in-out forwards",
             }}
             alt={imageAltText}
           />
         </div>
         <div className="container">
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
+            <a href={project.url} target="_blank" rel="noopener noreferrer" key={project.title}>
+              <div className="box">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
-              <p className="small">{project.description}</p>
-            </div>
+                <p className="small">{project.description}</p>
+              </div>
+            </a>
           ))}
         </div>
       </div>

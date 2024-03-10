@@ -1,4 +1,5 @@
 import React, { createContext, useContext } from "react";
+import PropTypes from "prop-types";
 
 //New context to provide a function to scroll to the about section
 const ScrollContext = createContext();
@@ -18,4 +19,10 @@ export const ScrollProvider = ({ children }) => {
   };
 
   return <ScrollContext.Provider value={{ scrollToAbout }}>{children}</ScrollContext.Provider>;
+};
+
+// Prop type validation for the ScrollProvider component
+//Written by recommendation of the ESLint plugin
+ScrollProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };

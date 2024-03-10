@@ -103,7 +103,7 @@ a {
 }
 
 a:hover {
-  color: #4e567e;
+  color: #cad7e0;
 }
 
 .container {
@@ -129,7 +129,7 @@ img.socialIcon {
 }
 
 /* add a slide In Left animation */
-@keyframes slideInLeft {
+@keyframes slideInLeftAnimation {
   0% {
     transform: translateX(-100%);
     opacity: 0;
@@ -150,5 +150,3 @@ img.socialIcon {
     transform: translateY(-10px);
   }
 }
-
-
