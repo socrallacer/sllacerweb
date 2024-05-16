@@ -28749,10 +28749,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/inicio.jpg":"iZe5v","../Contexts/ScrollContext":"6gYiU","../images/down-arrow.svg":"b5nCi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iZe5v":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "inicio.5c927e28.jpg" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"6gYiU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../Contexts/ScrollContext":"6gYiU","../images/down-arrow.svg":"b5nCi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/inicio.jpg":"iZe5v"}],"6gYiU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$61cc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28811,6 +28808,9 @@ $RefreshReg$(_c, "ScrollProvider");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b5nCi":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "down-arrow.1037091f.svg" + "?" + Date.now();
 
+},{"./helpers/bundle-url":"lgJ39"}],"iZe5v":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "inicio.5c927e28.jpg" + "?" + Date.now();
+
 },{"./helpers/bundle-url":"lgJ39"}],"lCaEt":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ed0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -28839,8 +28839,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  *
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
- */ var _finalJpg = require("../images/final.jpg");
-var _finalJpgDefault = parcelHelpers.interopDefault(_finalJpg);
+ */ var _portfolioJpeg = require("../images/portfolio.jpeg");
+var _portfolioJpegDefault = parcelHelpers.interopDefault(_portfolioJpeg);
 const imageAltText = "desktop with books and laptop";
 /**
  * Project list
@@ -28897,7 +28897,7 @@ const Portfolio = ()=>{
                             alignSelf: "center"
                         },
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _finalJpgDefault.default),
+                            src: (0, _portfolioJpegDefault.default),
                             style: {
                                 height: "90%",
                                 width: "100%",
@@ -28923,6 +28923,14 @@ const Portfolio = ()=>{
                                 rel: "noopener noreferrer",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "box",
+                                    style: {
+                                        padding: "25px",
+                                        boxSizing: "border-box",
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "space-between",
+                                        minHeight: "325px"
+                                    },
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             style: {
@@ -28931,7 +28939,7 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 80,
+                                            lineNumber: 90,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28939,7 +28947,16 @@ const Portfolio = ()=>{
                                             children: project.description
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 81,
+                                            lineNumber: 91,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            style: {
+                                                flexGrow: 1
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Portfolio.jsx",
+                                            lineNumber: 92,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
@@ -28981,8 +28998,8 @@ $RefreshReg$(_c, "Portfolio");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/final.jpg":"gpAAQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gpAAQ":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "final.9d7dbee3.jpg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/portfolio.jpeg":"3T6Mo"}],"3T6Mo":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "portfolio.27c351d0.jpeg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"6QZcy":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8bef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -29012,7 +29029,7 @@ const educationList = [
     },
     {
         title: "Polythecnic University of Valencia",
-        description: "Diploma in Artificial Intelligence (Samsung Innovation Campus)",
+        description: "Diploma in Artificial Intelligence \n (Samsung Innovation Campus)",
         date: "2024-2024",
         image: (0, _logoUPVJpgDefault.default),
         url: "https://www.cfp.upv.es/formacion-permanente/curso/diploma-extension-universitaria-inteligencia-artificial-samsung-innovation-campus_97568.html"
@@ -29032,19 +29049,18 @@ const Education = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 style: {
-                    textAlign: "center"
+                    textAlign: "center",
+                    marginBottom: "20px"
                 },
                 children: "Education"
             }, void 0, false, {
                 fileName: "src/Components/Education.jsx",
-                lineNumber: 35,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 id: "education",
-                style: {
-                    alignItems: "flex-start"
-                },
+                style: {},
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: (0, _giammarcoBoscaroZeHLjawHtgUnsplashJpgDefault.default),
@@ -29056,15 +29072,16 @@ const Education = ()=>{
                         alt: "Education"
                     }, void 0, false, {
                         fileName: "src/Components/Education.jsx",
-                        lineNumber: 37,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "container",
                         style: {
-                            display: "flex",
-                            flexDirection: "row",
-                            padding: "10px"
+                            display: "grid",
+                            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+                            gap: "20px",
+                            padding: "20px"
                         },
                         children: educationList.map((education)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                 href: education.url,
@@ -29072,7 +29089,14 @@ const Education = ()=>{
                                 rel: "noopener noreferrer",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "box",
-                                    style: {},
+                                    style: {
+                                        padding: "25px",
+                                        boxSizing: "border-box",
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "space-between",
+                                        minHeight: "250px"
+                                    },
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             style: {
@@ -29081,20 +29105,20 @@ const Education = ()=>{
                                             children: education.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Education.jsx",
-                                            lineNumber: 54,
+                                            lineNumber: 68,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                             src: education.image,
                                             alt: education.title,
                                             style: {
-                                                maxWidth: "70px",
-                                                maxHeight: "50px",
+                                                maxWidth: "90px",
+                                                maxHeight: "60px",
                                                 margin: "0 auto"
                                             }
                                         }, void 0, false, {
                                             fileName: "src/Components/Education.jsx",
-                                            lineNumber: 55,
+                                            lineNumber: 69,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29102,7 +29126,7 @@ const Education = ()=>{
                                             children: education.date
                                         }, void 0, false, {
                                             fileName: "src/Components/Education.jsx",
-                                            lineNumber: 61,
+                                            lineNumber: 75,
                                             columnNumber: 17
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29110,35 +29134,44 @@ const Education = ()=>{
                                             children: education.description
                                         }, void 0, false, {
                                             fileName: "src/Components/Education.jsx",
-                                            lineNumber: 62,
+                                            lineNumber: 76,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            style: {
+                                                flexGrow: 1
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Education.jsx",
+                                            lineNumber: 77,
                                             columnNumber: 17
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/Components/Education.jsx",
-                                    lineNumber: 53,
+                                    lineNumber: 57,
                                     columnNumber: 15
                                 }, undefined)
                             }, education.title, false, {
                                 fileName: "src/Components/Education.jsx",
-                                lineNumber: 52,
+                                lineNumber: 56,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Education.jsx",
-                        lineNumber: 47,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Education.jsx",
-                lineNumber: 36,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Education.jsx",
-        lineNumber: 34,
+        lineNumber: 33,
         columnNumber: 5
     }, undefined);
 };
