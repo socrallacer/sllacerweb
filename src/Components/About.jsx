@@ -23,13 +23,13 @@ const imageAltText = "purple and blue abstract background";
 /**
  * Sort description that expands on your title on the Home component.
  */
-const description = "I'm a computer science student who loves diving and the sea.";
-
+const description =
+  "I am passionate about apnea, continuously enriching myself through reading, and actively participating in basketball. I am deeply committed to innovation and sustainability, believing they are essential for driving progress and creating a better future.";
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = ["Web design", "User experience", "Data Analysis", "Data Mining "];
+const skillsList = ["Proactive", "Team player", "Data Analysys", "Data Mining"];
 
 /**
  * Use this to give more information about what you are passionate about,
@@ -37,7 +37,7 @@ const skillsList = ["Web design", "User experience", "Data Analysis", "Data Mini
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. I am a quick learner and I am always looking for new challenges.";
+  "An entrepreneurial and curious individual enthusiastic about data science and machine learning. Proven track record in managing multidisciplinary teams and financial operations while developing data-driven solutions. Seeking internship opportunities that offer a rich learning environment.";
 
 const About = () => {
   return (
