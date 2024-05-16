@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/final.jpg";
+import image from "../images/portfolio.jpeg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -76,9 +76,20 @@ const Portfolio = () => {
         <div className="container">
           {projectList.map((project) => (
             <a href={project.url} target="_blank" rel="noopener noreferrer" key={project.title}>
-              <div className="box">
+              <div
+                className="box"
+                style={{
+                  padding: "25px",
+                  boxSizing: "border-box",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  minHeight: "325px",
+                }}
+              >
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
                 <p className="small">{project.description}</p>
+                <div style={{ flexGrow: 1 }}></div>
               </div>
             </a>
           ))}
