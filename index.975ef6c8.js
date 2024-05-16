@@ -27077,6 +27077,8 @@ var _home = require("./Components/Home");
 var _homeDefault = parcelHelpers.interopDefault(_home);
 var _portfolio = require("./Components/Portfolio");
 var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
+var _education = require("./Components/Education");
+var _educationDefault = parcelHelpers.interopDefault(_education);
 var _scrollContext = require("./Contexts/ScrollContext");
 var _stylesCss = require("./styles.css");
 /**
@@ -27107,7 +27109,7 @@ const App = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 46,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
@@ -27115,19 +27117,24 @@ const App = ()=>{
                     title: siteProps.title
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {
                     id: "about"
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 48,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 49,
+                    lineNumber: 50,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _educationDefault.default), {}, void 0, false, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 51,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
@@ -27136,18 +27143,18 @@ const App = ()=>{
                     secondaryColor: secondaryColor
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 50,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.jsx",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 44,
+        lineNumber: 45,
         columnNumber: 5
     }, undefined);
 };
@@ -27161,7 +27168,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./Contexts/ScrollContext":"6gYiU","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./Components/Education":"6QZcy","./Contexts/ScrollContext":"6gYiU","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$17a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27191,21 +27198,21 @@ var _intermediaJpgDefault = parcelHelpers.interopDefault(_intermediaJpg);
 const imageAltText = "purple and blue abstract background";
 /**
  * Sort description that expands on your title on the Home component.
- */ const description = "I'm a computer science student who loves diving and the sea.";
+ */ const description = "I am passionate about apnea, continuously enriching myself through reading, and actively participating in basketball. I am deeply committed to innovation and sustainability, believing they are essential for driving progress and creating a better future.";
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */ const skillsList = [
-    "Web design",
-    "User experience",
-    "Data Analysis",
-    "Data Mining "
+    "Proactive",
+    "Team player",
+    "Data Analysys",
+    "Data Mining"
 ];
 /**
  * Use this to give more information about what you are passionate about,
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
- */ const detailOrQuote = "I am passionate about solving problems in new creative ways to drive innovation. I am a quick learner and I am always looking for new challenges.";
+ */ const detailOrQuote = "An entrepreneurial and curious individual enthusiastic about data science and machine learning. Proven track record in managing multidisciplinary teams and financial operations while developing data-driven solutions. Seeking internship opportunities that offer a rich learning environment.";
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
@@ -28759,6 +28766,8 @@ parcelHelpers.export(exports, "ScrollProvider", ()=>ScrollProvider);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 var _s = $RefreshSig$();
 //New context to provide a function to scroll to the about section
 const ScrollContext = /*#__PURE__*/ (0, _react.createContext)();
@@ -28782,10 +28791,15 @@ const ScrollProvider = ({ children  })=>{
     }, void 0, false, {
         fileName: "src/Contexts/ScrollContext.jsx",
         lineNumber: 21,
-        columnNumber: 5
+        columnNumber: 10
     }, undefined);
 };
 _c = ScrollProvider;
+// Prop type validation for the ScrollProvider component
+//Written by recommendation of the ESLint plugin
+ScrollProvider.propTypes = {
+    children: (0, _propTypesDefault.default).node.isRequired
+};
 var _c;
 $RefreshReg$(_c, "ScrollProvider");
 
@@ -28794,7 +28808,7 @@ $RefreshReg$(_c, "ScrollProvider");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b5nCi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b5nCi":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "down-arrow.1037091f.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lCaEt":[function(require,module,exports) {
@@ -28888,7 +28902,7 @@ const Portfolio = ()=>{
                                 height: "90%",
                                 width: "100%",
                                 objectFit: "cover",
-                                animation: "slideInLeft 1s ease-in-out forwards"
+                                animation: "slideInLeftAnimation 1s ease-in-out forwards"
                             },
                             alt: imageAltText
                         }, void 0, false, {
@@ -28903,14 +28917,14 @@ const Portfolio = ()=>{
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "container",
-                        children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "box",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: project.url,
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: project.url,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "box",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                             style: {
                                                 flexBasis: "40px"
                                             },
@@ -28919,22 +28933,22 @@ const Portfolio = ()=>{
                                             fileName: "src/Components/Portfolio.jsx",
                                             lineNumber: 80,
                                             columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "small",
+                                            children: project.description
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Portfolio.jsx",
+                                            lineNumber: 81,
+                                            columnNumber: 17
                                         }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 79,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "small",
-                                        children: project.description
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 82,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, project.title, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/Portfolio.jsx",
+                                    lineNumber: 79,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, project.title, false, {
                                 fileName: "src/Components/Portfolio.jsx",
                                 lineNumber: 78,
                                 columnNumber: 13
@@ -28969,6 +28983,183 @@ $RefreshReg$(_c, "Portfolio");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/final.jpg":"gpAAQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gpAAQ":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "final.9d7dbee3.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"6QZcy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8bef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8bef.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _giammarcoBoscaroZeHLjawHtgUnsplashJpg = require("../images/giammarco-boscaro-zeH-ljawHtg-unsplash.jpg");
+var _giammarcoBoscaroZeHLjawHtgUnsplashJpgDefault = parcelHelpers.interopDefault(_giammarcoBoscaroZeHLjawHtgUnsplashJpg);
+var _logoUPVJpg = require("../images/logo_UPV.jpg");
+var _logoUPVJpgDefault = parcelHelpers.interopDefault(_logoUPVJpg);
+var _logoTUBERLINPng = require("../images/logo_TU_BERLIN.png");
+var _logoTUBERLINPngDefault = parcelHelpers.interopDefault(_logoTUBERLINPng);
+const educationList = [
+    {
+        title: "Polythecnic University of Valencia",
+        description: "Computer Science Engineering",
+        date: "2018-2024",
+        image: (0, _logoUPVJpgDefault.default),
+        url: "https://www.upv.es/titulaciones/GII/"
+    },
+    {
+        title: "Polythecnic University of Valencia",
+        description: "Diploma in Artificial Intelligence (Samsung Innovation Campus)",
+        date: "2024-2024",
+        image: (0, _logoUPVJpgDefault.default),
+        url: "https://www.cfp.upv.es/formacion-permanente/curso/diploma-extension-universitaria-inteligencia-artificial-samsung-innovation-campus_97568.html"
+    },
+    {
+        title: "Technische Universit\xe4t Berlin",
+        description: "Ethics and epistemology of artificial intelligence",
+        date: "2024-2024",
+        image: (0, _logoTUBERLINPngDefault.default),
+        url: "https://www.tu.berlin/en/philtech/study-and-teaching/ethics-and-epistemology-of-ai"
+    }, 
+];
+const Education = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "padding",
+        id: "education",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                style: {
+                    textAlign: "center"
+                },
+                children: "Education"
+            }, void 0, false, {
+                fileName: "src/Components/Education.jsx",
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                id: "education",
+                style: {
+                    alignItems: "flex-start"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _giammarcoBoscaroZeHLjawHtgUnsplashJpgDefault.default),
+                        style: {
+                            height: "80%",
+                            width: "100%",
+                            objectFit: "cover"
+                        },
+                        alt: "Education"
+                    }, void 0, false, {
+                        fileName: "src/Components/Education.jsx",
+                        lineNumber: 37,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "container",
+                        style: {
+                            display: "flex",
+                            flexDirection: "row",
+                            padding: "10px"
+                        },
+                        children: educationList.map((education)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: education.url,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "box",
+                                    style: {},
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            style: {
+                                                flexBasis: "40px"
+                                            },
+                                            children: education.title
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Education.jsx",
+                                            lineNumber: 54,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: education.image,
+                                            alt: education.title,
+                                            style: {
+                                                maxWidth: "70px",
+                                                maxHeight: "50px",
+                                                margin: "0 auto"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Education.jsx",
+                                            lineNumber: 55,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "small",
+                                            children: education.date
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Education.jsx",
+                                            lineNumber: 61,
+                                            columnNumber: 17
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "small",
+                                            children: education.description
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Education.jsx",
+                                            lineNumber: 62,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/Education.jsx",
+                                    lineNumber: 53,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, education.title, false, {
+                                fileName: "src/Components/Education.jsx",
+                                lineNumber: 52,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/Components/Education.jsx",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Education.jsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Education.jsx",
+        lineNumber: 34,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Education;
+exports.default = Education;
+var _c;
+$RefreshReg$(_c, "Education");
+
+  $parcel$ReactRefreshHelpers$8bef.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/giammarco-boscaro-zeH-ljawHtg-unsplash.jpg":"aXs4E","../images/logo_UPV.jpg":"bKKNd","../images/logo_TU_BERLIN.png":"7ZV3l"}],"aXs4E":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "giammarco-boscaro-zeH-ljawHtg-unsplash.55bbcd4a.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"bKKNd":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "logo_UPV.c28b7752.jpg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"7ZV3l":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "logo_TU_BERLIN.932ae598.png" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 

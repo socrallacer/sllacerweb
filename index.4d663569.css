@@ -97,7 +97,7 @@ a {
 }
 
 a:hover {
-  color: #4e567e;
+  color: #cad7e0;
 }
 
 .container {
@@ -122,7 +122,7 @@ img.socialIcon {
   width: 30px;
 }
 
-@keyframes slideInLeft {
+@keyframes slideInLeftAnimation {
   0% {
     opacity: 0;
     transform: translateX(-100%);
